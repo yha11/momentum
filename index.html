@@ -12,14 +12,11 @@
     <script src="index.js"></script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Kolker+Brush&display=swap');
 
         body {
-            background-image: url("https://cdn.ipnn.co.kr/news/photo/202112/403880_45764_5812.jpg");
+            background-image: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80");
             background-position: center;
             background-size: cover;
 
@@ -27,24 +24,35 @@
         }
 
         .time {
-            font-size: 80px;
+            font-size: 50px;
             font-weight: bold;
         }
 
         .greeting {
-            font-size: 50px;
-        }
-
-        .todo {
             font-size: 30px;
         }
 
+        .todoheader {
+            font-size: 13px;
+        }
+
+        .todo {
+            font-size: 20px;
+        }
+
+        .content {
+            font-size: 35px;
+            font-style: italic;
+        }
+
         .author {
-            font-size: 25px;
+            font-size: 20px;
             font-style: italic;
         }
 
         .main {
+            font-family: 'Jua', sans-serif;
+
             width: 100vw;
             height: 80vh;
 
@@ -55,6 +63,8 @@
         }
 
         .quote {
+            font-family: 'Kolker Brush', cursive;
+
             width: 100vw;
             height: 20vh;
 
@@ -72,12 +82,15 @@
 <body>
     <div class="main">
         <div id="time" class="time">12:00</div>
-        <div class="greeting">Hello, Yungsang!</div>
-        <div class="todo">24인 레이드 가기</div>
+        <hr>
+        <div class="greeting">Hello, World!</div>
+        <br>
+        <div class="todoheader">Today's TODO</div>
+        <div class="todo">spring study</div>
     </div>
     <div class="quote">
-        <div id="author" class="author">- 명언의 저자 -</div>
         <div id="content" class="content">" 명언의 내용 "</div>
+        <div id="author" class="author">- 명언의 저자 -</div>
     </div>
 </body>
 
