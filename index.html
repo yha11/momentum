@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>나만의 동기부여 홈화면 만들기</title>
+    <title>Today's TODO</title>
 
     <script src="index.js"></script>
 
@@ -34,10 +34,21 @@
 
         .todoheader {
             font-size: 13px;
+            margin: 0px 0px 4px 0px;
         }
 
         .todo {
-            font-size: 20px;
+            font-size: 13px;
+        }
+        
+        p {
+            margin: 0px 0px 0px 0px;
+            line-height: 120%;
+        }
+
+        .selected {
+            text-decoration: line-through;
+            color: gainsboro;
         }
 
         .content {
@@ -75,23 +86,25 @@
         }
     </style>
 
-    <script>
-    </script>
 </head>
 
 <body>
     <div class="main">
         <div id="time" class="time">12:00</div>
         <hr>
-        <div class="greeting">Hello, World!</div>
+        <div class="greeting">Hello, World !</div>
         <br>
-        <div class="todoheader">Today's TODO</div>
-        <div class="todo">spring study</div>
+        <div class="todoheader">📌Today's TODO</div>
+        <div class="todo">
+            <p><input type="checkbox">유데미 나마스떼 자바강의 1섹션</p>
+            <p><input type="checkbox">메타코딩 블로그 프로젝트 1시간</p>
+            <p><input type="checkbox">자바의정석 1챕터</p>
+            <p><input type="checkbox">백준 코딩테스트 1문제</p>
+        </div>
     </div>
     <div class="quote">
         <div id="content" class="content">" 명언의 내용 "</div>
         <div id="author" class="author">- 명언의 저자 -</div>
     </div>
 </body>
-
 </html>

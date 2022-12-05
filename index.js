@@ -2,6 +2,7 @@ $(document).ready(function () {
     renderCurrentTime();
     renderQuote();
     renderRandomImage();
+    checkToDo();
 });
 
 
@@ -41,4 +42,14 @@ function renderRandomImage() {
     let randomImage = Math.floor(Math.random() * (imageListLength)) + 1
     randomImage = `images/${randomImage}.jpg`
     $(document.body).css("background-image", `url(${randomImage})`);
+}
+
+function checkToDo() {
+    $("input:checkbox").on('click', function() {
+            if ( $(this).prop('checked') ) {
+            $(this).parent().addClass("selected");
+            } else {
+            $(this).parent().removeClass("selected");
+            }
+        });
 }
